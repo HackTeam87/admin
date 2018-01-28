@@ -1,0 +1,115 @@
+/*Admin-Create*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+.buttons-post li {
+    display: block;
+}
+
+.navbar-brand img {
+    opacity: 0.5;
+}
+
+.btn-small {
+    margin-bottom: 5px;
+}
+
+.nav .navbar-nav {
+    float: right;
+}
+
+.navbar-brand {
+    float: right;
+}
+
+.breadcrumb {
+    margin-bottom: 0;
+}
+
+.centered {
+    text-align: center;
+}
+
+.navbar , .navbar-inverse {
+    background-color: #00b0ff;
+    color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: yellow;
+    font-size: 18px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    opacity: 0.7;
+    transition: all 0.8s ease-out
+}
+
+.prime-text {
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 1px;
+}
+
+.buttonText {
+    background-color: #00b0ff;
+    color: #ffffff;
+    padding: 7px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.btn:hover {
+    opacity: 0.4;
+    transition: all 0.8s ease-out
+}
+
+body {
+    background-color: rgba(36, 96, 255, 0.1);
+}
+
+.logout-user-li {
+    float: right;
+    display: inline-block;
+    padding-right: 18px;
+    line-height: 45px;
+}
+
+.logout-user {
+    color: indigo;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+    background-color: orangered;
+}
+
+/*ArticlesPages*/
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.article-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 55px;
+    letter-spacing: 3px;
+    color: green;
+}
+
+.article-title:hover {
+    text-decoration: none;
+}
+
+
+/*Admin-Show*/
