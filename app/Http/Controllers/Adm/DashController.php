@@ -38,9 +38,7 @@ class DashController extends Controller
         $post = Post::paginate(4);
         $categories = Category::all();
 
-        $file = 'media/';
-
-        return view('administrator.posts.create',['file'=>$file], ['post' => $post])->with('categories', $categories);
+        return view('administrator.posts.create', ['post' => $post])->with('categories', $categories);
     }
 
 
@@ -62,7 +60,7 @@ class DashController extends Controller
 
             $filename = time() . '.' . $post_thumbnail->getClientOriginalExtension();
 
-            Image::make($post_thumbnail)->resize(400, 400)->opacity(50)->save( public_path('media/' . $filename ) );
+            Image::make($post_thumbnail)->resize(400, 400)->opacity(50)->save( public_path('media/blog' . $filename ) );
 
             // Set post-thumbnail url
             $post->post_thumbnail = $filename;

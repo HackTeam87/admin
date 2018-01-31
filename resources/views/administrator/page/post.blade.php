@@ -9,8 +9,8 @@
 
                 <div class="col-md-4">
                 <span>
-                    <a href="/{!! $post->file !!}">
-                        <img class="responsive-img" src="/{!! $post->file !!}" alt="img" width="250px">
+                    <a href="/media/{!! $post->post_thumbnail !!}">
+                        <img class="responsive-img" src="/media/{!! $post->post_thumbnail!!}" alt="img" width="250px">
                     </a>
                 </span>
                 </div>

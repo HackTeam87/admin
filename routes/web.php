@@ -27,6 +27,12 @@ Auth::routes();
             //AdminPermissions
             Route::resource('/permissions', 'Adm\PermissionsController');
 
+            //AdminTarifs
+            Route::resource('/tarifs', 'Adm\TarifController');
+
+            //AdminPslider
+            Route::resource('/pslider', 'Adm\ProductSliderController');
+
 
             //Profile
             Route::get('profile/{username}', [
@@ -47,9 +53,8 @@ Route::get('facebook/auth/callback', 'AuthFacebook\AuthController@handleToProvid
 
 
 //all pages
-Route::get('/', function () {
-    return view('site.index');
-});
+Route::get('/', 'Mysite\SiteController@index');
+
 
 
 //Vue
@@ -57,6 +62,11 @@ Route::get('/', function () {
 Route::get('/vue', function () {
     return view('vue.vue');
 });
+
+Route::get('/slider', function () {
+    return view('test-slider');
+});
+
 
 //calendars
 //Route::get('/calendar', function () {

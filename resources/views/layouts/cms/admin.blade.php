@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{{ config('app.name', 'Laravel Dashboard') }}</title>
-    <title></title>
+    <title>@Yield('title')</title>
   
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -74,9 +74,9 @@
       </footer>
 
       <!-- Control Sidebar -->
-      <aside class="control-sidebar control-sidebar-dark">
-        @include('layouts.cms._control')
-      </aside>
+      {{--<aside class="control-sidebar control-sidebar-dark">--}}
+        {{--@include('layouts.cms._control')--}}
+      {{--</aside>--}}
       <!-- /.control-sidebar -->
       <!-- Add the sidebar's background. This div must be placed
            immediately after the control sidebar -->
@@ -86,7 +86,7 @@
   <!-- ./wrapper -->
 
     @include('layouts.cms._script')
-    @yield('scripts')
+    {{--@yield('scripts')--}}
 
 </body>
 </html>

@@ -53,7 +53,7 @@
                                         <td class="col-md-5">{!! $item->text !!}</td>
                                         <td class="col-md-1">
 
-                                            <img src="{!! $item->post_thumbnail !!}" alt="img" >
+                                            <img src="/media/{!! $item->post_thumbnail !!}" alt="img" >
                                         </td>
 
 

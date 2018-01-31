@@ -13,4 +13,9 @@ class Category extends Model
     {
         return $this->hasMany('App\Post');
     }
+
+    public function tarifs()
+    {
+        return $this->hasMany('App\Tarif');
+    }
 }

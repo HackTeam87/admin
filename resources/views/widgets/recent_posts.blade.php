@@ -1,4 +1,4 @@
-<h3>Список Статей</h3>
+<h3>Список Товаров</h3>
 <ul class="pills1">
     @foreach ($articles as $key => $value)
         <li class="pills2"><a href="{{ $value->id }}">{{ $value->title }}</a></li>

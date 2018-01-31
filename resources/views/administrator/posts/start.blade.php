@@ -21,16 +21,22 @@
                         <tr>
                             <td>
                                 @if($user->isOnline())
+
                                     <span style="color:green">Online</span>
-                                @else
-                                    <span style="color:red">Offline</span>
-                                @endif
-                            </td>
-                            @endforeach
+
                             <td>{!!$user->id!!}</td>
                             <td>{!! $user->name !!}</td>
                             <td class="raw-m-hide">{!! $user->email !!}</td>
+
+                            @else
+
+                                <span style="color:red">Offline</span>
+
+                                @endif
+
+                                </td>
                         </tr>
+                    @endforeach
                 </table>
             </div>
             <div class="col-md-8 col-md-offset-2">

@@ -3,6 +3,8 @@
 use Illuminate\Database\Seeder;
 use App\Post;
 use App\Calendar;
+use App\User;
+use App\ProductSlider;
 use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
@@ -15,37 +17,21 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
 
-
-//        $data = [
-//
-//            ['title'=>'Rom Calendar', 'start_date'=>'2017-05-10', 'end_date'=>'2017-05-15'],
-//
-//            ['title'=>'Coyala Calendar', 'start_date'=>'2017-05-11', 'end_date'=>'2017-05-16'],
-//
-//            ['title'=>'Lara Calendar', 'start_date'=>'2017-05-16', 'end_date'=>'2017-05-22'],
-//
-//        ];
-//
-//        foreach ($data as $key => $value) {
-//
-//            Calendar::create($value);
-//
-//        }
-//
-//    }
-
-
-//        Calendar::create(
+//       User::create(
 //            [
-//                'title' => 'Rom Calendar', 'start_date' => '2017-05-10', 'end_date' => '2017-05-15',
-//
-//                'title' => 'Coyala Calendar', 'start_date' => '2017-05-11', 'end_date' => '2017-05-16',
-//
-//                'title' => 'Lara Calendar', 'start_date' => '2017-05-16', 'end_date' => '2017-05-22',
+//                'id'=> '8',
+//                'name' => 'admin3',
+//                'email' => 'admin3@gmail.com',
+//                'password'=>'admin123',
 //
 //            ]);
 
-//         $this->call(AddDummyCalendar::class);
-
+       ProductSlider::create([
+          'title' => 'Бездротовий маршрутизатор TP-LINK Archer C20',
+          'price' => '1200',
+          'text' => '<p>Стандарт бездротового зв&rsquo;язку&nbsp;&nbsp;Wi-Fi 802.11 b / g / n&nbsp; Робота у двох діапазонах (dual band)&nbsp;&nbsp;2.4 GHz / 5.0 GHz&nbsp; Інтерфейс підключення (LAN-порт)&nbsp;&nbsp;4x 10/100 Ethernet&nbsp; Вхід (WAN-порт)&nbsp;&nbsp;1x 10/100 Ethernet&nbsp; USB&nbsp;&nbsp;немає</p>
+',
+           '1517385321.jpg"'
+       ]);
     }
 }
